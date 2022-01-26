@@ -6,7 +6,12 @@ namespace GitProjekt2B
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Osoba o = new Osoba();
+            o.Jmeno = "Zděněk";
+            o.Prijmeni = "Jendřejčík";
+            o.DatumNarozeni = DateTime.Parse("01.01.2022");
+            Console.WriteLine(o.GetVek());
+            Console.ReadKey();
         }
     }
 }
